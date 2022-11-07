@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1><p style="color: blue">Informacion Familiar: </p><h1>
+
+    <h1><p style="color: green">Datos Madre:</p><h1>
+        <ul>  {% for mdates in madre %}
+        
+        <li> {{mdates}} </li>
+
+        {% endfor %}
+        </ul>
+    <h1><p style="color: green">Datos Padre:</p><h1> 
+        <ul>  {% for pdate in padre %}
+            
+            <li> {{pdate}} </li>
+    
+            {% endfor %}
+        </ul>
+    <h1><p style="color: green">Datos Hermana:</p><h1> 
+        <ul>  {% for hdate in hermana %}
+                
+            <li> {{hdate}} </li>
+        
+                {% endfor %}
+        </ul>
+</body>
+</html>
